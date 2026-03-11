@@ -93,7 +93,6 @@ function StatCard({ num, label, icon: Icon, delay }) {
         {/* Number */}
         <div
           style={{
-            fontFamily: "'Playfair Display', serif",
             fontSize: "clamp(2rem,3.5vw,2.6rem)",
             fontWeight: 900,
             color: "#1e56a0",
@@ -106,7 +105,6 @@ function StatCard({ num, label, icon: Icon, delay }) {
         {/* Label */}
         <div
           style={{
-            fontFamily: "'Playfair Display', serif",
             fontSize: "0.62rem",
             letterSpacing: "0.16em",
             color: "#6b7280",
@@ -146,7 +144,6 @@ export default function About() {
         <Reveal className="mb-16 text-center lg:text-left">
           <h2
             style={{
-              fontFamily: "'Playfair Display',serif",
               fontSize: "clamp(2rem,4vw,3.2rem)",
               color: "#111827",
               fontWeight: 700,
@@ -176,7 +173,6 @@ export default function About() {
                   <p
                     key={i}
                     style={{
-                      fontFamily: "'Cormorant Garamond',serif",
                       fontSize: "clamp(1.05rem,1.8vw,1.2rem)",
                       color: "#374151",
                       lineHeight: 1.95,
@@ -205,7 +201,6 @@ export default function About() {
                 <div>
                   <div
                     style={{
-                      fontFamily: "'Cinzel',serif",
                       fontSize: "0.58rem",
                       letterSpacing: "0.22em",
                       color: "#6b7280",
@@ -217,7 +212,6 @@ export default function About() {
 
                   <div
                     style={{
-                      fontFamily: "'Playfair Display',serif",
                       fontSize: "1.1rem",
                       fontWeight: 700,
                       color: "#1e56a0",

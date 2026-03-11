@@ -15,7 +15,6 @@ function Footer() {
         <div>
           <h3
             style={{
-              fontFamily: "'Cinzel',serif",
               fontSize: "1.4rem",
               color: "#ffffff",
               marginBottom: "10px"
@@ -26,7 +25,6 @@ function Footer() {
 
           <p
             style={{
-              fontFamily: "'Cormorant Garamond',serif",
               color: "#cbd5f5",
               lineHeight: "1.7"
             }}
@@ -41,7 +39,6 @@ function Footer() {
         <div>
           <h4
             style={{
-              fontFamily: "'Cinzel',serif",
               fontSize: "1.1rem",
               marginBottom: "14px",
               color: "#ffffff"
@@ -64,7 +61,6 @@ function Footer() {
         <div>
           <h4
             style={{
-              fontFamily: "'Cinzel',serif",
               fontSize: "1.1rem",
               marginBottom: "14px",
               color: "#ffffff"
@@ -100,7 +96,6 @@ function Footer() {
 
         <p
           style={{
-            fontFamily: "'Cormorant Garamond',serif",
             color: "#cbd5f5"
           }}
         >

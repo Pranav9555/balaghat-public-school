@@ -22,12 +22,11 @@ function Header() {
           <img
             src="/Balaghat_logo.jpeg"
             alt="BPS"
-            className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+            className="h-16 w-20 sm:h-16 sm:w-16 object-contain"
           />
           <div
             className="leading-tight tracking-wide text-base sm:text-lg"
             style={{
-              fontFamily: "'Playfair Display', serif",
               color: "#1a1a1a",
               fontWeight: "600"
             }}
@@ -44,7 +43,6 @@ function Header() {
                 href={`#${l.toLowerCase()}`}
                 className="hover:text-blue-600 transition-colors duration-200 tracking-widest text-sm lg:text-base"
                 style={{
-                  fontFamily: "'Cinzel', serif",
                   color: "#374151"
                 }}
               >
@@ -87,7 +85,6 @@ function Header() {
                     onClick={() => setOpen(false)}
                     className="tracking-widest hover:text-blue-600 text-2xl font-semibold"
                     style={{
-                      fontFamily: "'Cinzel', serif",
                       color: "#1a1a1a"
                     }}
                   >

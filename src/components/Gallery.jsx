@@ -45,7 +45,6 @@ function Gallery() {
 
           <h2
             style={{
-              fontFamily: "'Playfair Display', serif",
               fontSize: "clamp(2rem,4vw,3rem)",
               color: "#1a1a1a",
               fontWeight: "700"
@@ -100,7 +99,6 @@ function Gallery() {
               style={{
                 background: "#ff7a00",
                 color: "#fff",
-                fontFamily: "'Cinzel', serif"
               }}
             >
               {showAll ? "Show Less" : "Show More"}

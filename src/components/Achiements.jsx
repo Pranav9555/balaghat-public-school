@@ -27,7 +27,6 @@ function Achievements() {
       className="py-24 px-6"
       style={{
         background: "linear-gradient(120deg,#ffffff 0%,#f6f8fc 100%)",
-        fontFamily: "'Playfair Display', serif"
       }}
     >
       <div className="max-w-7xl mx-auto">
@@ -87,7 +86,7 @@ function Achievements() {
             return (
               <div
                 key={index}
-                className="bg-blue-50 p-6 rounded-xl shadow-xl transform transition hover:-translate-y-3 hover:shadow-2xl flex flex-col items-center"
+                className=" p-6 rounded-xl shadow-xl transform transition hover:-translate-y-3 hover:shadow-2xl flex flex-col items-center"
               >
                 <FaMedal size={36} color={medalColors[index]} className="mb-3" />
 
