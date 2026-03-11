@@ -2,7 +2,6 @@ import "./App.css";
 import About from "./components/About";
 import Achievements from "./components/Achiements";
 import Activities from "./components/Activities";
-import Contact from "./components/Contact";
 import Facilities from "./components/Facilities";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -31,7 +30,6 @@ export default function App() {
       <Activities />
       <Achievements />
       <Gallery />
-      <Contact />
       <Location />
       <Footer />
     </>
