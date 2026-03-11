@@ -42,7 +42,7 @@ function Gallery() {
 
           <h2
             style={{
-              fontFamily: "'Cinzel',serif",
+              fontFamily: "'Playfair Display', serif",
               fontSize: "clamp(2rem,4vw,3rem)",
               color: "#1a1a1a",
               fontWeight: "700"

@@ -106,7 +106,7 @@ function StatCard({ num, label, icon: Icon, delay }) {
         {/* Label */}
         <div
           style={{
-            fontFamily: "'Cinzel', serif",
+            fontFamily: "'Playfair Display', serif",
             fontSize: "0.62rem",
             letterSpacing: "0.16em",
             color: "#6b7280",

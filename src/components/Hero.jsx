@@ -18,7 +18,7 @@ function Hero() {
           <h1
             className="font-bold leading-tight"
             style={{
-              fontFamily: "'Cinzel',serif",
+              fontFamily: "'Playfair Display', serif",
               fontSize: "clamp(2rem,5vw,4rem)",
               color: "#1a1a1a"
             }}
@@ -38,9 +38,9 @@ function Hero() {
           </h1>
 
           <div className="flex items-center gap-4 my-6 justify-center md:justify-start">
-            <div className="w-20 md:w-28 h-px bg-gradient-to-r from-transparent to-blue-500" />
+            <div className="w-20 md:w-28 h-px  from-transparent to-blue-500" />
             <span className="text-orange-500 text-lg">✦</span>
-            <div className="w-20 md:w-28 h-px bg-gradient-to-l from-transparent to-blue-500" />
+            <div className="w-20 md:w-28 h-px  from-transparent to-blue-500" />
           </div>
 
           <p
