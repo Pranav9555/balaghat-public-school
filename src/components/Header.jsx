@@ -4,7 +4,7 @@ import { MdMenu, MdClose } from "react-icons/md";
 function Header() {
   const [open, setOpen] = useState(false);
 
-  const links = ["About", "Facilities", "Activities", "Achievements", "Gallery", "Contact"];
+  const links = ["About", "Facilities", "Activities", "Gallery", "Contact"];
 
   return (
     <nav

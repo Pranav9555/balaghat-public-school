@@ -111,7 +111,7 @@ function Footer() {
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt />
-              <p>+91 8888328365</p>
+              <p>+91 9422932722</p>
             </div>
 
             <div className="flex items-center gap-3">
