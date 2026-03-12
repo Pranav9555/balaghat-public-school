@@ -17,23 +17,26 @@ function Header() {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-8 md:px-12 h-full">
 
-        {/* Logo */}
-        <div className="flex items-center gap-3">
-          <img
-            src="/Balaghat_logo.jpeg"
-            alt="BPS"
-            className="h-16 w-20 sm:h-16 sm:w-16 object-contain"
-          />
-          <div
-            className="leading-tight tracking-wide text-base sm:text-lg"
-            style={{
-              color: "#1a1a1a",
-              fontWeight: "600"
-            }}
-          >
-            Balaghat Public School
-          </div>
-        </div>
+    {/* Logo */}
+<div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+  <img
+    src="/Balaghat_logo.jpeg"
+    alt="BPS"
+    className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 object-contain"
+  />
+
+  <div
+    className="leading-tight tracking-wide text-sm sm:text-base md:text-lg lg:text-xl max-w-[160px] sm:max-w-[220px] md:max-w-none"
+    style={{
+      color: "#1a1a1a",
+      fontWeight: "600",
+      marginRight : "3px",
+    }}
+  >
+    Balaghat Public School
+  </div>
+</div>
+
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 lg:gap-9 list-none">
