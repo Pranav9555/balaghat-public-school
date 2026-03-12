@@ -16,7 +16,7 @@ export default function App() {
       <Header />
 
       <FloatingWhatsApp
-        phoneNumber="919309140606"
+        phoneNumber="8888328365"
         accountName="Balaghat Public School"
         avatar="/Balaghat_logo.jpeg"
         chatMessage="Welcome to Balaghat Public School"

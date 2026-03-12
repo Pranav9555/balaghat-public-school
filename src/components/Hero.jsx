@@ -79,7 +79,7 @@ function Hero() {
         {/* RIGHT IMAGE */}
         <div className="flex justify-center md:justify-end items-end h-full z-10">
           <img
-            src="/model2.png"
+            src="/model1.png"
             alt="Balaghat Public School"
             className="w-[85%] sm:w-full max-w-xs sm:max-w-md md:max-w-lg object-contain"
           />

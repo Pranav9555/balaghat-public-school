@@ -1,4 +1,10 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaInstagram,
+  FaFacebookF,
+} from "react-icons/fa";
 
 function Location() {
   return (
@@ -6,18 +12,17 @@ function Location() {
       id="contact"
       className="py-24 px-6"
       style={{
-        background: "linear-gradient(120deg,#f6f8fc 0%,#eef2f7 100%)"
+        background: "linear-gradient(120deg,#f6f8fc 0%,#eef2f7 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto">
-
         {/* Title */}
         <div className="text-center mb-16">
           <h2
             style={{
               fontSize: "clamp(2rem,4vw,3rem)",
               color: "#1a1a1a",
-              fontWeight: "700"
+              fontWeight: "700",
             }}
           >
             Our Location & Contact
@@ -32,7 +37,6 @@ function Location() {
 
         {/* Grid Layout */}
         <div className="grid md:grid-cols-2 gap-12 items-start">
-
           {/* Left Side - Map */}
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
@@ -47,21 +51,20 @@ function Location() {
 
           {/* Right Side - Contact Details */}
           <div className="space-y-6">
-
             <div className="flex items-start gap-4 bg-white p-6 rounded-lg shadow-md">
               <FaMapMarkerAlt size={22} color="#1e56a0" />
               <div>
                 <h4
                   style={{
                     fontSize: "1.1rem",
-                    color: "#1a1a1a"
+                    color: "#1a1a1a",
                   }}
                 >
                   Address
                 </h4>
                 <p
                   style={{
-                    color: "#4a5568"
+                    color: "#4a5568",
                   }}
                 >
                   Balaghat Public School <br />
@@ -77,17 +80,17 @@ function Location() {
                 <h4
                   style={{
                     fontSize: "1.1rem",
-                    color: "#1a1a1a"
+                    color: "#1a1a1a",
                   }}
                 >
                   Phone
                 </h4>
                 <p
                   style={{
-                    color: "#4a5568"
+                    color: "#4a5568",
                   }}
                 >
-                  +91 94229 32722
+                  +91 8888328365
                 </p>
               </div>
             </div>
@@ -98,25 +101,62 @@ function Location() {
                 <h4
                   style={{
                     fontSize: "1.1rem",
-                    color: "#1a1a1a"
+                    color: "#1a1a1a",
                   }}
                 >
                   Email
                 </h4>
                 <p
                   style={{
-                    color: "#4a5568"
+                    color: "#4a5568",
                   }}
                 >
                   balaghatps2013@gmail.com
                 </p>
               </div>
             </div>
+            {/* Social Media */}
+            <div className="flex items-start gap-4 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+              <div>
+                <h4
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#1a1a1a",
+                  }}
+                >
+                  Connect With Us
+                </h4>
 
+                <p className="text-gray-500 text-sm mb-3">
+                  Follow our school on social media for latest updates and
+                  activities.
+                </p>
+
+                <div className="flex gap-3">
+                  {/* Facebook */}
+                  <a
+                    href="https://www.facebook.com/balaghat.public.school.telgaon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300"
+                  >
+                    <FaFacebookF />
+                  </a>
+
+                  {/* Instagram */}
+                  <a
+                    href="https://www.instagram.com/balaghatpublicschool?igsh=cGQ5d2JubDAzdng4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-600 hover:text-white transition duration-300"
+                  >
+                    <FaInstagram />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );
