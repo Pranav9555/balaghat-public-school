@@ -1,3 +1,4 @@
+
 function Hero() {
   return (
     <section
@@ -10,6 +11,24 @@ function Hero() {
       <div className="relative max-w-7xl mx-auto w-full px-8 md:px-10 lg:px-16 grid md:grid-cols-2 gap-12 items-center pt-24 ">
         {/* LEFT CONTENT */}
         <div className="z-10 text-center md:text-left">
+
+{/* Admission Sliding Banner */}
+<div className="mb-6 rounded-xl overflow-hidden shadow-lg border border-yellow-300">
+  <marquee
+    behavior="scroll"
+    direction="left"
+    scrollamount="6"
+    className="flex items-center gap-10 py-3 px-4 font-semibold text-sm md:text-base text-gray-900 bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-300"
+  >
+    🎓 Admission Open for Academic Year 2026-27 
+    &nbsp;&nbsp; | &nbsp;&nbsp;
+    📞 Contact Us for Admission Enquiry 
+    &nbsp;&nbsp; | &nbsp;&nbsp;
+    ✨ Limited Seats Available – Apply Soon
+  </marquee>
+</div>
+
+
           <h1
             className="font-bold leading-tight"
             style={{
@@ -67,15 +86,15 @@ function Hero() {
             </a>
           </div>
         </div>
-
-{/* RIGHT IMAGE */}
-<div className="flex justify-center md:justify-end items-end h-full z-10">
-  <img
-    src="/model.png"
-    alt="Balaghat Public School"
-    className="w-full max-w-md md:max-w-lg object-contain"
-  />
-</div>      </div>
+        {/* RIGHT IMAGE */}
+        <div className="flex justify-center md:justify-end items-end h-full z-10">
+          <img
+            src="/model2.png"
+            alt="Balaghat Public School"
+            className="w-full max-w-md md:max-w-lg object-contain"
+          />
+        </div>{" "}
+      </div>
     </section>
   );
 }

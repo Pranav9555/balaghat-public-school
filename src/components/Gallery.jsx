@@ -6,6 +6,7 @@ function Gallery() {
   const [showAll, setShowAll] = useState(false);
 
   const images = [
+    "/balaghat_school.png",
     "/Gallery1.jpeg",
     "/Gallery3.jpeg",
     "/Gallery19.jpeg",
