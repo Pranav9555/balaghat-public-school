@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -13,20 +13,27 @@ function Footer() {
 
         {/* School Info */}
         <div>
-          <h3
-            style={{
-              fontFamily: "'Cinzel',serif",
-              fontSize: "1.4rem",
-              color: "#ffffff",
-              marginBottom: "10px"
-            }}
-          >
-            Balaghat Public School
-          </h3>
+
+          {/* Logo + Name */}
+          <div className="flex items-center gap-3 mb-4">
+            <img
+              src="/Balaghat_logo.jpeg"
+              alt="Balaghat Public School"
+              className="h-12 w-12 object-contain"
+            />
+
+            <h3
+              style={{
+                fontSize: "1.4rem",
+                color: "#ffffff"
+              }}
+            >
+              Balaghat Public School
+            </h3>
+          </div>
 
           <p
             style={{
-              fontFamily: "'Cormorant Garamond',serif",
               color: "#cbd5f5",
               lineHeight: "1.7"
             }}
@@ -35,13 +42,36 @@ function Footer() {
             quality education and holistic development of students.
             We aim to nurture responsible, confident, and successful citizens.
           </p>
+
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-5">
+
+            <a
+              href="https://www.facebook.com/balaghat.public.school.telgaon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 p-4 rounded-full hover:bg-blue-600 transition"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://www.instagram.com/balaghatpublicschool/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 p-4 rounded-full hover:bg-pink-500 transition"
+            >
+              <FaInstagram />
+            </a>
+
+          </div>
+
         </div>
 
         {/* Quick Links */}
         <div>
           <h4
             style={{
-              fontFamily: "'Cinzel',serif",
               fontSize: "1.1rem",
               marginBottom: "14px",
               color: "#ffffff"
@@ -64,7 +94,6 @@ function Footer() {
         <div>
           <h4
             style={{
-              fontFamily: "'Cinzel',serif",
               fontSize: "1.1rem",
               marginBottom: "14px",
               color: "#ffffff"
@@ -82,7 +111,7 @@ function Footer() {
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt />
-              <p>+91 094229 32722</p>
+              <p>+91 9422932722</p>
             </div>
 
             <div className="flex items-center gap-3">
@@ -98,13 +127,17 @@ function Footer() {
       {/* Bottom Copyright */}
       <div className="border-t border-gray-600 mt-12 pt-6 text-center">
 
-        <p
-          style={{
-            fontFamily: "'Cormorant Garamond',serif",
-            color: "#cbd5f5"
-          }}
-        >
-          © {new Date().getFullYear()} Shiksha Vistar. All Rights Reserved.
+        <p style={{ color: "#cbd5f5" }}>
+          © {new Date().getFullYear()} Balaghat Public School, Telgaon. All Rights Reserved. |
+          Developed by{" "}
+          <a
+            href="https://shivaytech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-400 hover:underline"
+          >
+            ShivayTech
+          </a>
         </p>
 
       </div>

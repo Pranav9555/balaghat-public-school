@@ -52,7 +52,6 @@ function Facilities() {
           <h2
             className="font-bold"
             style={{
-              fontFamily: "'Playfair Display', serif",
               fontSize: "clamp(2rem,4vw,3rem)",
               color: "#1a1a1a"
             }}
@@ -90,7 +89,6 @@ function Facilities() {
                 <h3
                   className="font-semibold mb-3"
                   style={{
-                    fontFamily: "'Cinzel',serif",
                     fontSize: "1.2rem",
                     color: "#1a1a1a"
                   }}
@@ -100,7 +98,6 @@ function Facilities() {
 
                 <p
                   style={{
-                    fontFamily: "'Cormorant Garamond',serif",
                     color: "#4a5568",
                     lineHeight: "1.7"
                   }}

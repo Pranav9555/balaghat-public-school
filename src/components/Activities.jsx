@@ -73,7 +73,6 @@ function Activities() {
         <div className="text-center mb-16">
           <h2
             style={{
-              fontFamily: "'Playfair Display', serif",
               fontSize: "clamp(2rem,4vw,3rem)",
               color: "#1a1a1a",
               fontWeight: "700"
@@ -110,7 +109,6 @@ function Activities() {
                 <h3
                   className="font-semibold mb-3"
                   style={{
-                    fontFamily: "'Cinzel',serif",
                     fontSize: "1.2rem",
                     color: "#1a1a1a"
                   }}
@@ -120,7 +118,6 @@ function Activities() {
 
                 <p
                   style={{
-                    fontFamily: "'Cormorant Garamond',serif",
                     color: "#4a5568",
                     lineHeight: "1.7"
                   }}

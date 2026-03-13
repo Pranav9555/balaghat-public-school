@@ -1,1 +1,24 @@
 @import "tailwindcss";
+body {
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+}
+
+
+@keyframes admission-slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-admission-slide {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: admission-slide 28s linear infinite;
+}
+
+

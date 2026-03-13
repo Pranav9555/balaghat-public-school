@@ -1,22 +1,32 @@
 import { useState, useEffect, useRef } from "react";
+import CountUp from "react-countup";
 import { FaUserGraduate, FaChalkboardTeacher, FaAward, FaChartLine } from "react-icons/fa";
 
 function useInView(threshold = 0.15) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
+
   useEffect(() => {
     const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } },
+      ([e]) => {
+        if (e.isIntersecting) {
+          setVisible(true);
+          obs.disconnect();
+        }
+      },
       { threshold }
     );
+
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
   }, [threshold]);
+
   return [ref, visible];
 }
 
 function Reveal({ children, delay = 0, className = "" }) {
   const [ref, visible] = useInView();
+
   return (
     <div
       ref={ref}
@@ -33,7 +43,7 @@ function Reveal({ children, delay = 0, className = "" }) {
 }
 
 const stats = [
-  { num: "1400+", label: "Students Enrolled", icon: FaUserGraduate },
+  { num: "500+", label: "Students Enrolled", icon: FaUserGraduate },
   { num: "14+", label: "Dedicated Faculty", icon: FaChalkboardTeacher },
   { num: "13+", label: "Years of Excellence", icon: FaAward },
   { num: "100%", label: "Board Pass Rate", icon: FaChartLine },
@@ -47,6 +57,10 @@ const paragraphs = [
 
 function StatCard({ num, label, icon: Icon, delay }) {
   const [hovered, setHovered] = useState(false);
+
+  const number = parseInt(num);
+  const suffix = num.includes("+") ? "+" : num.includes("%") ? "%" : "";
+
   return (
     <Reveal delay={delay}>
       <div
@@ -90,23 +104,22 @@ function StatCard({ num, label, icon: Icon, delay }) {
           <Icon style={{ color: "#1e56a0", fontSize: "1.15rem" }} />
         </div>
 
-        {/* Number */}
+        {/* Animated Number */}
         <div
           style={{
-            fontFamily: "'Playfair Display', serif",
             fontSize: "clamp(2rem,3.5vw,2.6rem)",
             fontWeight: 900,
             color: "#1e56a0",
             marginBottom: 6,
           }}
         >
-          {num}
+          <CountUp end={number} duration={2} enableScrollSpy scrollSpyOnce />
+          {suffix}
         </div>
 
         {/* Label */}
         <div
           style={{
-            fontFamily: "'Playfair Display', serif",
             fontSize: "0.62rem",
             letterSpacing: "0.16em",
             color: "#6b7280",
@@ -130,23 +143,12 @@ export default function About() {
         padding: "96px 20px",
       }}
     >
-      {/* Accent line */}
-      <div
-        className="absolute top-0 bottom-0 left-0 hidden lg:block"
-        style={{
-          width: 3,
-          background:
-            "linear-gradient(to bottom, transparent, #1e56a0 30%, #1e56a0 70%, transparent)",
-        }}
-      />
-
       <div className="relative max-w-6xl mx-auto px-6 sm:px-10 lg:px-16">
 
         {/* HEADER */}
         <Reveal className="mb-16 text-center lg:text-left">
           <h2
             style={{
-              fontFamily: "'Playfair Display',serif",
               fontSize: "clamp(2rem,4vw,3.2rem)",
               color: "#111827",
               fontWeight: 700,
@@ -176,7 +178,6 @@ export default function About() {
                   <p
                     key={i}
                     style={{
-                      fontFamily: "'Cormorant Garamond',serif",
                       fontSize: "clamp(1.05rem,1.8vw,1.2rem)",
                       color: "#374151",
                       lineHeight: 1.95,
@@ -188,7 +189,6 @@ export default function About() {
               </div>
             </Reveal>
 
-            {/* Badge */}
             <Reveal delay={200}>
               <div
                 style={{
@@ -205,7 +205,6 @@ export default function About() {
                 <div>
                   <div
                     style={{
-                      fontFamily: "'Cinzel',serif",
                       fontSize: "0.58rem",
                       letterSpacing: "0.22em",
                       color: "#6b7280",
@@ -217,7 +216,6 @@ export default function About() {
 
                   <div
                     style={{
-                      fontFamily: "'Playfair Display',serif",
                       fontSize: "1.1rem",
                       fontWeight: 700,
                       color: "#1e56a0",

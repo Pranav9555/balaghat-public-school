@@ -3,16 +3,18 @@ import { useState } from "react";
 function Gallery() {
 
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showAll, setShowAll] = useState(false);
 
   const images = [
+    "/balaghat_school.png",
     "/Gallery1.jpeg",
+    "/Gallery6.jpeg",
     "/Gallery3.jpeg",
     "/Gallery19.jpeg",
     "/Gallery8.jpeg",
     "/Gallery11.jpeg",
     "/Gallery5.jpeg",
     "/Gallery13.jpeg",
-    "/Gallery6.jpeg",
     "/Gallery9.jpeg",
     "/Gallery10.jpeg",
     "/Gallery12.jpeg",
@@ -26,6 +28,8 @@ function Gallery() {
     "/Gallery4.jpeg",
     "/Gallery18.jpeg",
   ];
+
+  const visibleImages = showAll ? images : images.slice(0, 8);
 
   return (
     <section
@@ -42,7 +46,6 @@ function Gallery() {
 
           <h2
             style={{
-              fontFamily: "'Playfair Display', serif",
               fontSize: "clamp(2rem,4vw,3rem)",
               color: "#1a1a1a",
               fontWeight: "700"
@@ -60,23 +63,50 @@ function Gallery() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
 
-          {images.map((img, index) => (
+          {visibleImages.map((img, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-lg shadow-md group cursor-pointer"
+              className="relative overflow-hidden rounded-xl shadow-md cursor-pointer group"
               onClick={() => setSelectedImage(img)}
             >
+
               <img
                 src={img}
                 alt={`School Gallery ${index + 1}`}
                 className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110"
               />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300 flex items-center justify-center">
+                <span className="opacity-0 group-hover:opacity-100 text-white text-sm tracking-widest">
+                  View
+                </span>
+              </div>
+
             </div>
           ))}
 
         </div>
+
+        {/* Show More Button */}
+        {images.length > 8 && (
+          <div className="text-center mt-12">
+
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="px-8 py-3 rounded-md font-semibold tracking-widest transition duration-300 hover:-translate-y-1"
+              style={{
+                background: "#ff7a00",
+                color: "#fff",
+              }}
+            >
+              {showAll ? "Show Less" : "Show More"}
+            </button>
+
+          </div>
+        )}
 
       </div>
 
@@ -89,7 +119,7 @@ function Gallery() {
           <img
             src={selectedImage}
             alt="Full View"
-            className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
+            className="max-h-[90vh] max-w-[90vw] rounded-xl shadow-2xl"
           />
         </div>
       )}
