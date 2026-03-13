@@ -56,7 +56,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/balaghatpublicschool?igsh=cGQ5d2JubDAzdng4"
+              href="https://www.instagram.com/balaghatpublicschool/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-700 p-4 rounded-full hover:bg-pink-500 transition"

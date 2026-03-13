@@ -145,7 +145,7 @@ function Location() {
 
                   {/* Instagram */}
                   <a
-                    href="https://www.instagram.com/balaghatpublicschool?igsh=cGQ5d2JubDAzdng4"
+                    href="https://www.instagram.com/balaghatpublicschool/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-600 hover:text-white transition duration-300"
